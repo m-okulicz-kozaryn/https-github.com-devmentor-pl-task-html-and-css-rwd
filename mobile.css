@@ -1,0 +1,50 @@
+@media screen and (min-width: 320px) {
+  header {
+    position: relative;
+    display: flex;
+
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1em;
+  }
+  .menu a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+  }
+  .hamburger {
+    display: inline-block;
+    font-size: 1em;
+    padding: 0.7em;
+    color: yellowgreen;
+  }
+  .menu a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+  }
+  .menu {
+    display: none;
+  }
+  input {
+    display: none;
+  }
+  .hamburger input:checked ~ .menu {
+    display: block;
+  }
+  .hero {
+    height: 100vh;
+  }
+  .features {
+    height: 120vh;
+  }
+  .app-download {
+    height: 60vh;
+  }
+  .testimonials {
+    height: 80vh;
+  }
+  .pricing {
+    height: 100vh;
+  }
+}
