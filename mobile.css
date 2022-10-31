@@ -1,12 +1,4 @@
 @media screen and (min-width: 320px) {
-  header {
-    position: relative;
-    display: flex;
-
-    justify-content: space-between;
-    flex-direction: row;
-    padding: 1em;
-  }
   .menu a {
     box-sizing: border-box;
     display: block;
@@ -16,7 +8,7 @@
     display: inline-block;
     font-size: 1em;
     padding: 0.7em;
-    color: yellowgreen;
+    color: aliceblue;
   }
   .menu a {
     box-sizing: border-box;
