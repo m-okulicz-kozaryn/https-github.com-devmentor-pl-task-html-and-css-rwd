@@ -1,13 +1,3 @@
-/*-- 
-header - #333333
-green button color - 79e1e5
-blue download button color - 0181f5
-get start from now background color - 5db2ff*
-footer backgroud - #1f1f1f
-icon footer #1f1f1f
-icon hover footer #4faafd
-*/
-
 * {
   box-sizing: border-box;
 }
@@ -47,37 +37,33 @@ img {
   height: auto;
   max-width: 100%;
 }
+/*HEADER and NAV*/
 header {
-  height: 20vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1em;
   background-color: #1f1f1f;
 }
+/*HERO*/
 .hero {
   display: grid;
-  grid-template-columns: repeat(2fr, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(1fr, 1fr);
+  grid-template-rows: 0.5fr, 0.5fr, 0.5fr, 0.5fr, 0.5fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   grid-template-areas:
     "a-cta h1"
     "a-cta p"
     "a-cta-btn"
-    "...a-cta-mobile-screen"
-    "...a-cta-mobile-screen"
-    "...";
+    "."
+    "." "a-cta-mobile-screen";
   background-image: url("../images/banner/banner.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: rgb(231, 238, 242);
   padding-top: 2em;
-  padding-bottom: 20em;
-}
-.cta {
-  height: 100%;
 }
 .cta h1 {
   grid-area: a-cta h1;
@@ -89,7 +75,7 @@ header {
 }
 .cta-mobile-screen {
   grid-area: a-cta-mobile-screen;
-  padding-left: 5em;
+  padding-left: 6em;
   width: 100%;
 }
 .cta-btn {
@@ -106,16 +92,11 @@ header {
   background-color: #5db2ff;
   transform: scale(1.1);
 }
-
+/*FEATURE*/
 .feature {
-  width: 100%;
-  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.feature-details {
-  padding-bottom: 110em;
 }
 .feature-details h3 {
   padding-top: 2em;
@@ -148,7 +129,7 @@ header {
   background-color: #79e1e5;
   transform: scale(1.1);
 }
-
+/*TESTIMONIALS*/
 .testimonials {
   background-image: url("images/banner/testmonial.png");
   background-color: #57a9f6;
@@ -185,22 +166,34 @@ header {
   font-size: 0.8em;
   color: aliceblue;
 }
-.princing {
-  width: auto;
-  height: 100vh;
-}
-.price-list {
+/*PRICE*/
+.price-list ul {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5em;
-  align-content: center;
   justify-content: center;
-  padding: 0 10%;
+  flex-direction: column;
 }
-.price-list .div {
-  gap: 1em;
+.price-list li {
+  padding-top: 0.9em;
+  font-size: 0.9em;
+  letter-spacing: 0.15em;
 }
-
+.ul-header--1,
+.ul-header--2,
+.ul-header--3 {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1em;
+  opacity: 0.2;
+}
+.ul-header--1 {
+  background-color: #0181f5;
+}
+.ul-header--2 {
+  background-color: #ebb72a;
+}
+.ul-header--3 {
+  background-color: #79e1e5;
+}
 .btn-price-list {
   max-width: 120px;
   padding: 0.5em 0.9em;
@@ -219,11 +212,8 @@ header {
   color: aliceblue;
   transform: scale(1.1);
 }
-.price-list li {
-  padding-top: 0.9em;
-  font-size: 0.9em;
-  letter-spacing: 0.15em;
-}
+
+/*APP DOWNLOAD*/
 .app-download {
   background-color: #3a9ffc;
   color: aliceblue;
@@ -234,14 +224,11 @@ header {
 .app-download--img {
   max-width: 100%;
 }
-.app-download--main {
-  padding: 2em;
-  padding: 2em;
-}
+/*FOOTER*/
 footer {
-  height: 60vh;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   background-color: #1f1f1f;
   color: rgb(231, 232, 232);
 }
@@ -250,6 +237,27 @@ footer p {
 }
 .footer-details h5 {
   padding-top: 0.6em;
+}
+.sm-icon--background--1,
+.sm-icon--background--2,
+.sm-icon--background--3 {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(78, 75, 75);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  /*position: absolute;*/
+}
+.sm-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  color: grey;
+  /*position: relative;*/
 }
 .footer-details ul {
   font-size: 0.8em;
@@ -268,8 +276,8 @@ footer p {
 .footer-details a:hover {
   color: #0181f5;
 }
+/*SERVICE PROVIDER*/
 .service-provider {
-  height: 9vh;
   padding-top: 1.5em;
   font-size: 0.8em;
   background-color: #000000;

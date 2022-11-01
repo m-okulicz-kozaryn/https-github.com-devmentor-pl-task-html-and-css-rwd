@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 500px) {
   .menu a {
     box-sizing: border-box;
     display: block;
@@ -10,11 +10,6 @@
     padding: 0.7em;
     color: aliceblue;
   }
-  .menu a {
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-  }
   .menu {
     display: none;
   }
@@ -24,19 +19,32 @@
   .hamburger input:checked ~ .menu {
     display: block;
   }
-  .hero {
-    height: 100vh;
+
+  .header {
+    min-height: 10vh;
+  }
+  .cta {
+    min-height: 100vh;
   }
   .features {
-    height: 100vh;
+    min-height: 60vh;
   }
   .app-download {
-    height: 60vh;
+    min-height: 60vh;
   }
   .testimonials {
-    height: 80vh;
+    min-height: 70vh;
   }
   .pricing {
-    height: 100vh;
+    min-height: 80vh;
+  }
+  .app-download {
+    min-height: 40vh;
+  }
+  .footer {
+    min-height: 50vh;
+  }
+  .service-provider {
+    min-height: 9vh;
   }
 }
