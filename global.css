@@ -234,6 +234,7 @@ footer {
 }
 footer p {
   font-size: 0.9em;
+  padding-bottom: 1em;
 }
 .footer-details h5 {
   padding-top: 0.6em;
@@ -249,7 +250,6 @@ footer p {
   flex-direction: row;
   justify-content: space-evenly;
   align-content: center;
-  /*position: absolute;*/
 }
 .sm-icons {
   display: flex;
@@ -257,7 +257,11 @@ footer p {
   align-items: center;
   width: 50%;
   color: grey;
-  /*position: relative;*/
+}
+.fa-brands {
+  color: aliceblue;
+  position: relative;
+  top: 25%;
 }
 .footer-details ul {
   font-size: 0.8em;
